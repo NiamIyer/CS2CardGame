@@ -6,6 +6,7 @@ public class Deck
     private int cardsLeft;
     public Deck (String[] rank, String[] suits, int[] value)
     {
+        cards = new ArrayList<Card>();
         for (String suit: suits)
         {
             for (int i = 0; i < rank.length; i++)
@@ -20,11 +21,8 @@ public class Deck
 
     public boolean isEmpty()
     {
-        if (cardsLeft == 0);
-        {
-            return true;
-        }
-        return false;
+        return (cardsLeft == 0);
+
     }
 
     public int getCardsLeft()
