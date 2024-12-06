@@ -9,6 +9,7 @@ public class Player
     {
         this.name = name;
         this.points = 0;
+        hand = new ArrayList<Card>();
     }
     public Player (String name, ArrayList<Card> hand)
     {
@@ -19,6 +20,10 @@ public class Player
 
     public String getName() {
         return name;
+    }
+
+    public void emptyHand() {
+        hand.clear();
     }
 
     public void setName(String name) {

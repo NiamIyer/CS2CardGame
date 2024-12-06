@@ -1,15 +1,17 @@
 public class Card
 {
+   // Initializes suit, value, and rank variables
    private String suit;
    private int value;
    private String rank;
+   // Initializes them in constructor
    public Card (String rank, String suit, int value)
    {
       this.rank = rank;
       this.suit = suit;
       this.value = value;
    }
-
+   // Getter and setter methods for each instance variable
    public String getRank()
    {
       return rank;
@@ -39,7 +41,7 @@ public class Card
    {
       this.suit = suit;
    }
-
+   // toString method for card
    public String toString()
    {
       return rank + " of " + suit;
